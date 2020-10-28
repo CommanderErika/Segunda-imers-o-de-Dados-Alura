@@ -34,13 +34,13 @@
 
 > O primeiro gráfico que iremos analisar será um gráfico sobre as escolas que os candidatos vão se graduar no ensino médio, visualizando a proporção entre escolas públicas e particulares dos candidatos. Nos dados há quatro tipos de categorias: pública, privada, não respondeu e exterior. O número de pessoas de escolas do exterior é zero, logo foi desconsiderado na análise. Em relação aos que 'não responderam', julgamos ser aqueles que já terminaram o ensino médio e estão fazendo novamente o ENEM. Os resultados do gráfico podem ser vistos na **Figura 1**.
 
-![Figura 1](1.png)
+![Figura 1](/1.png)
 
 ### 4.2 Relação das nota totais por tipo de Escola
 
 > Neste tópico iremos fazer uma breve análise sobre a performace dos alunos em relação a sua escola do ensino médio. Além disso, iremos retirar os valores nulos das notas de cada candidato para obter um resultado mais conciso.
 
-![Figura 2](2.png)
+![Figura 2](/2.png)
 
 ### 4.3 Relação das notas totais em relação à dependência administrativa da escola
 
