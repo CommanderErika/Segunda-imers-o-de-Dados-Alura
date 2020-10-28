@@ -34,13 +34,19 @@
 
 > O primeiro gráfico que iremos analisar será um gráfico sobre as escolas que os candidatos vão se graduar no ensino médio, visualizando a proporção entre escolas públicas e particulares dos candidatos. Nos dados há quatro tipos de categorias: pública, privada, não respondeu e exterior. O número de pessoas de escolas do exterior é zero, logo foi desconsiderado na análise. Em relação aos que 'não responderam', julgamos ser aqueles que já terminaram o ensino médio e estão fazendo novamente o ENEM. Os resultados do gráfico podem ser vistos na **Figura 1**.
 
+![Figura 1](1.png)
+
 ### 4.2 Relação das nota totais por tipo de Escola
 
 > Neste tópico iremos fazer uma breve análise sobre a performace dos alunos em relação a sua escola do ensino médio. Além disso, iremos retirar os valores nulos das notas de cada candidato para obter um resultado mais conciso.
 
+![Figura 2](2.png)
+
 ### 4.3 Relação das notas totais em relação à dependência administrativa da escola
 
 > É importante lembrar que no Brasil a educação pública é dividida por diferentes governos, sendo eles: o governo municipal, estadual, e federal. Para isso, vamos fazer a mesma análise anterior, sendo que para as dependências administrativas da escolas. O resultado é possível ser visto na **Figura 3**.
+
+![Figura 3](3.png)
 
 > É notório, a partir da **Figura 3**, que há uma baixa performace da educação estadual e municipal em relação às escolas federais e privadas. Vale lembrar que as escolas de ensino médio federais são os Institutos Federais.
 
@@ -49,7 +55,6 @@
 > Uma grande questão em relação as escolas é: **quem são candidatos que frequentam cada tipo de escola?** Quais são suas rendas, e será que todo mundo tem como pagar por uma escola privada pra ter acesso a uma boa educação?
 
 > Infelizmente, no Brasil, de acordo com uma pesquisa do IBGE [5], cerca de 50% dos brasileiros vivem com apenas 413 reais por mês. Se a prioridade de do cidadão é comprar o básico para a sobrevivência (compra de alimentos e itens essenciais), será que esses brasileiros terão dinheiro para pagar por uma boa escola? Obviamente não.
-
 
 > Para ficar mais claro a relação da renda dos candidados, na **Figura 4** foi criado um pequeno gráfico que expõe isso. Nos dados do ENEM 2019 a renda do candidato é categorizada de A até Q, onde:
 * A : Não possui nenhuma renda.
@@ -70,11 +75,15 @@
 * P : De 14970.01 reais até 19960.00 reais
 * Q : Mais de 19960.00 reais
 
+![Figura 4](4.png)
+
 ### 4.5 Performance das notas dos candidatos com relação a dependência administrativa da escola e o tipo de renda.
 
 > Para encerrar a análise em relação aos dados do ENEM 2019, será feito um gráfico que analisa tudo que foi visto anteriormente em uma só imagem, **Figura 5**. É possível observar que com o aumento da renda aumenta a performance do candidato, apesar de que há pouca pessoas de rendas mais altas em relação às mais baixas. Proporcionalmente e estatisticamente, vide **Figura 4**, era pra ter mais gente indo bem nas rendas mais baixas, mas como nem todo mundo tem acesso a uma boa educação isso não é possível.
 
 * Na legenda do boxplot: 1 é federal, 2 é estadual, 3 é municipal, e 4 é privado.
+
+![Figura 5](5.png)
 
 ### 4.6 Conclusão da análise dos dados do ENEM 2019
 
@@ -87,6 +96,8 @@
 > Neste topico iremos analisar a média das notas do IDEB em relação à dependência administrativa das escolas, **Figura 6**.
 
 > É possivel ver claramente a partir do dados do IDEB que a performance das escolas do ensino médio federais e privadas são melhores que a estadual.
+
+![Figura 6](6.png)
 
 ## **5. Processamento dos dados**
 
@@ -122,6 +133,10 @@
 > No primeiro modelo, SVR, é notório que quanto menor é o Epsilon melhor, e quanto maior o grau da curva polinomial melhor fica o nosso modelo. E no nosso segundo modelo, árvore de decisões, quanto maior é a nossa árvore, melhor é o nosso modelo.
 
 > Entretanto, foi observado que toda vez que a gente alterava os dados de teste e de treino as métricas r squared dos modelos alteravam um pouco. Para não haver dúvidas se o modelo está tendo um **Overfitting ou um underfitting** iremos criar um algoritmo para gerar vários modelos para diferentes dados de treino e de teste.
+
+> Para verificar a veracidade do modelo de árvore de decisão, será aplicado o **cross validation**.
+
+![Figura 7](7.png)
 
 ## **8. Conclusão e Resultados**
 
